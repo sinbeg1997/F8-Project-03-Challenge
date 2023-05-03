@@ -289,3 +289,70 @@ button {
   bottom: 0;
   right: 50px;
 }
+
+/* Logo section */
+.logo__section {
+  margin-top: 42px;
+}
+
+.logo__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e2eddf;
+  border-radius: 100.5px;
+  padding: 76px;
+}
+
+.logo__item {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  transition: 0.25s;
+}
+
+.logo__item:hover {
+  transform: scale(1.1);
+}
+
+.logo__item.google {
+  font-weight: 500;
+  font-size: 3.1rem;
+  line-height: 1.48;
+  color: #143c3c;
+}
+
+.logo__item.slack {
+  margin-left: 42px;
+  gap: 3px;
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 1.5;
+  color: #143c3c;
+}
+
+.logo__item.agworld {
+  margin-left: 55px;
+  gap: 14px;
+  font-size: 2.6rem;
+  line-height: 1.5;
+  color: #163c35;
+}
+
+.logo__item.riotinto {
+  margin-left: 64px;
+  font-family: "Sonsie One", cursive;
+  font-size: 2.3rem;
+  line-height: 1.3;
+  color: #143c3c;
+}
+
+.logo__item.heroku {
+  margin-left: 63px;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 1.9rem;
+  line-height: 1.47;
+  letter-spacing: 0.105em;
+  color: #143c3c;
+}
