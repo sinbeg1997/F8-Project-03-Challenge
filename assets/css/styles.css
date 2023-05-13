@@ -693,3 +693,130 @@ button {
   line-height: 1.71;
   color: #7d8188;
 }
+
+/* Process */
+
+.process {
+  margin-top: 115px;
+  font-family: "Poppins", sans-serif;
+}
+
+.process-row {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.process__header-subtitle {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.125;
+  color: #152427;
+}
+
+.process-heading {
+  position: relative;
+  max-width: 477px;
+  margin-top: 20px;
+}
+
+.process-heading::after {
+  position: absolute;
+  bottom: 22px;
+  margin-left: 20px;
+  content: "";
+  display: inline-block;
+  width: 66px;
+  height: 2px;
+  background: #152427;
+}
+
+.process__content {
+  margin-top: 80px;
+  position: relative;
+}
+
+.process__thumb {
+  position: absolute;
+  top: -259px;
+  right: 92px;
+  width: 450px;
+  height: 444px;
+}
+
+.process__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.process__content-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 57px 20px 20px;
+  border-radius: 33px;
+}
+
+.process__content-row + .process__content-row::after {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: linear-gradient(
+    180deg,
+    #83a17d 4.17%,
+    rgba(131, 161, 125, 0) 36.46%
+  );
+}
+
+.process__content-row:nth-child(1) {
+  background: #e2eddf;
+  padding-left: 30px;
+  padding-bottom: 54px;
+}
+
+.process__content-row:nth-child(3) {
+  padding-bottom: 25px;
+}
+
+.process__content-stt {
+  font-weight: 600;
+  font-size: 7.2rem;
+  line-height: 0.722;
+  color: #143c3c;
+}
+
+.process__content-box {
+  margin-left: 64px;
+}
+
+.process__row-title {
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 1;
+  color: #152427;
+}
+
+.process__row-more {
+  display: inline-block;
+  margin-top: 22px;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: #575d5e;
+  text-decoration: underline;
+}
+
+.process__row-desc {
+  margin-left: auto;
+  font-family: "Public Sans", sans-serif;
+  width: 50.17%;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.56;
+  color: #7d8188;
+}
