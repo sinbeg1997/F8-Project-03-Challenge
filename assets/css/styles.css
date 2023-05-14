@@ -820,3 +820,53 @@ button {
   line-height: 1.56;
   color: #7d8188;
 }
+
+/* Features */
+
+.feature {
+  margin-top: 148px;
+  background: #143c3c;
+  padding-top: 116px;
+  padding-bottom: 64px;
+}
+
+.feature__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feature-heading {
+  color: #e7f9f9;
+  max-width: 457px;
+}
+
+.feature__header-content {
+  max-width: 590px;
+  font-size: 1.8rem;
+  line-height: 1.555;
+}
+
+.feature__header-desc {
+  font-weight: 500;
+  color: #6a8383;
+}
+
+.feature__header-browse {
+  margin-top: 12px;
+  display: inline-block;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.feature__header-browse:hover {
+  text-decoration: underline;
+}
+
+.feature__header-arrow {
+  margin-left: 26px;
+}
+
+.feature__video {
+  margin-top: 65px;
+}
