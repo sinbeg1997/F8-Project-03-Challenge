@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  background: #efefef;
   font-size: 1.6rem;
   font-family: "Public Sans", sans-serif;
 }
@@ -88,6 +89,21 @@ button {
   object-fit: cover;
 }
 
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
+.line-clamp.line-3 {
+  --line-clamp: 3;
+}
+
 /* Header */
 
 .logo {
@@ -105,7 +121,6 @@ button {
 .header {
   padding-top: 28px;
   min-height: 100vh;
-  background: var(--header-bg);
 }
 
 .header-top {
@@ -443,15 +458,10 @@ button {
   display: flex;
   flex-wrap: nowrap;
   column-gap: 16px;
-  overflow: auto;
 }
 
 .service__item {
-  flex: 1 0 360px;
-  padding-bottom: 8px;
-}
-
-.service__item:hover {
+  flex: 1 0 370px;
   cursor: pointer;
 }
 
@@ -460,12 +470,12 @@ button {
   margin-top: -85px;
   min-height: 245px;
   transition: 0.25s;
-  background: #ffffff;
   border-radius: 20px;
   position: relative;
 }
 
-.service__item-info:hover {
+.service__item:hover .service__item-info {
+  background: #ffffff;
   box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
 }
 
@@ -955,7 +965,7 @@ button {
 }
 
 .service__features-item-desc {
-  margin-top: 12px;
+  margin-top: 20px;
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 1.714285;
@@ -1032,28 +1042,30 @@ button {
   display: flex;
   flex-wrap: nowrap;
   column-gap: 30px;
-  overflow: auto;
 }
 
 .blog__item {
+  display: flex;
+  flex-direction: column;
   flex: 1 0 360px;
-  padding-bottom: 8px;
   cursor: pointer;
+  height: 520px;
 }
 
 .blog__item:hover .blog__item-info {
-  max-width: 100%;
   box-shadow: 0px 12px 74px rgba(91, 91, 91, 0.25);
   border-radius: 0px 0px 20px 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .blog__item-info {
-  padding-left: 30px;
-  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   padding-bottom: 12px;
   transition: all 0.25s;
   padding-top: 26px;
-  max-width: calc(100% - 16px);
 }
 
 .blog__item-thumb {
@@ -1089,13 +1101,13 @@ button {
   font-size: 1.8rem;
   line-height: 1.67;
   color: #143c3c;
-  padding-bottom: 38px;
-  border-bottom: 1px solid #c4c4c4;
 }
 
 .blog__item-date {
+  padding-top: 15px;
+  border-top: 1px solid #c4c4c4;
   text-align: right;
-  margin-top: 16px;
+  margin-top: auto;
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.2;
@@ -1213,6 +1225,7 @@ button {
   font-size: 1.8rem;
   line-height: 1.555;
   color: #ffffff;
+  margin-bottom: 6px;
 }
 
 .footer__col-link {
