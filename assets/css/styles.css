@@ -688,6 +688,10 @@ button {
   margin-right: 21px;
 }
 
+.about-heading {
+  margin-top: 20px;
+}
+
 .about__desc {
   margin-top: 11px;
 }
@@ -1406,6 +1410,7 @@ button {
 
   .hero__media {
     width: 100%;
+    padding-bottom: 95px;
   }
 
   .hero__images {
@@ -1420,28 +1425,103 @@ button {
 
   /* Logo section */
   .logo__wrap {
-    flex-direction: column;
-    padding: 0;
+    padding: 50px 0;
     border-radius: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 30px;
   }
 
-  .logo__item.google {
-    font-size: 2.4rem;
+  .logo__item:not(:first-child) {
+    margin-left: 0px;
+  }
+  .logo__item {
+    font-size: 2.4rem !important;
+  }
+
+  .logo__item.riotinto {
+    font-size: 1.8rem !important;
   }
 
   /* Service */
-  .service__list,
-  .blog__list {
-    flex-direction: column;
+
+  .service__list {
+    margin-top: 11px;
+    /* overflow: hidden; */
+  }
+
+  .service__item:not(:first-child) {
+    display: none;
+  }
+
+  .service__item {
+    flex: 1 0 100%;
+    padding: 36px 36px 0;
+  }
+
+  .service__item-thumb {
+    height: 224px;
   }
 
   .service__features-list {
     display: none;
   }
+
+  .service__controls {
+    display: none;
+  }
+
+  .service__item-info {
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+  }
+
+  .service__item:hover .service__item-info {
+    background: #fff;
+  }
   /* About section */
+
+  .about__body {
+    display: block;
+  }
 
   .about__media {
     display: none;
+  }
+
+  .about__content {
+    width: auto;
+    margin-left: 0;
+  }
+
+  .about-heading {
+    margin-top: 12px;
+    width: calc(100% - 72px);
+  }
+
+  .about__countdown {
+    padding-top: 16px;
+    padding-bottom: 11px;
+  }
+
+  .about__countdown:first-of-type {
+    padding-top: 36px;
+  }
+
+  .about__desc {
+    width: 92.5%;
+  }
+
+  .about__countdown-percent {
+    width: 54px;
+    flex-shrink: 0;
+    font-size: 2.6rem;
+  }
+
+  .about__countdown-desc {
+    font-size: 1rem;
+    margin-left: 15px;
+    padding-right: 5px;
+    line-height: 1.5;
   }
 
   /* Process */
@@ -1451,6 +1531,12 @@ button {
 
   .process__content {
     display: none;
+  }
+
+  /* blogs */
+
+  .blog__list {
+    flex-direction: column;
   }
 
   /* Footer */
